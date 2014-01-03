@@ -47,9 +47,6 @@ function bmSearch(string, pattern) {
   }
 
   // perform the search
-  if(pl === 0) {
-    return 0
-  }
   for(var i = pl - 1; i < sl; ) {
     for(var j = pl - 1; pat[j] === str[i]; i--, j--) {
       if(j === 0) {
